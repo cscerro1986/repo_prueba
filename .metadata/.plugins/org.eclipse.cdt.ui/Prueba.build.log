@@ -1,0 +1,38 @@
+20:36:45 **** Incremental Build of configuration Debug for project Prueba ****
+make all 
+Building file: ../src/Prueba.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Prueba.d" -MT"src/Prueba.o" -o "src/Prueba.o" "../src/Prueba.cpp"
+../src/Prueba.cpp: In function ‘int main()’:
+../src/Prueba.cpp:28:9: warning: unused variable ‘ch1’ [-Wunused-variable]
+   float ch1,ch2,ch3,ch4,ch5;
+         ^~~
+../src/Prueba.cpp:28:13: warning: unused variable ‘ch2’ [-Wunused-variable]
+   float ch1,ch2,ch3,ch4,ch5;
+             ^~~
+../src/Prueba.cpp:28:17: warning: unused variable ‘ch3’ [-Wunused-variable]
+   float ch1,ch2,ch3,ch4,ch5;
+                 ^~~
+../src/Prueba.cpp:28:21: warning: unused variable ‘ch4’ [-Wunused-variable]
+   float ch1,ch2,ch3,ch4,ch5;
+                     ^~~
+../src/Prueba.cpp:28:25: warning: unused variable ‘ch5’ [-Wunused-variable]
+   float ch1,ch2,ch3,ch4,ch5;
+                         ^~~
+../src/Prueba.cpp:21:6: warning: unused variable ‘resultado’ [-Wunused-variable]
+  int resultado;
+      ^~~~~~~~~
+../src/Prueba.cpp: In function ‘int dimeNumero(float&, int)’:
+../src/Prueba.cpp:44:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+Finished building: ../src/Prueba.cpp
+ 
+Building target: Prueba
+Invoking: GCC C++ Linker
+g++  -o "Prueba"  ./src/Prueba.o   
+Finished building target: Prueba
+ 
+
+20:36:45 Build Finished. 0 errors, 7 warnings. (took 537ms)
+

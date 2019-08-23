@@ -1,0 +1,29 @@
+/*
+ ============================================================================
+ Name        : prog1general.c
+ Author      : Julian Ioisi
+ Version     : 0.1
+ Copyright   : 
+ Description : Learning & testing project
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+//pide dos numeros, los guarda en 2 variables dist, las suma y lo muestra
+int main(void) {
+	int result;
+	int sumar = sumaDatos(&result);
+	printf("\nLa suma de los numeros es : %d",result);
+	return EXIT_SUCCESS;
+}
+
+int sumaDatos(int* result){
+	int numA,numB;
+	printf("Ingrese el primer numero.\n");
+	scanf("%d",&numA);
+	printf("Ingrese el segundo numero.\n");
+	scanf("%d",&numB);
+	*result = numA+numB;
+	return 1;
+}

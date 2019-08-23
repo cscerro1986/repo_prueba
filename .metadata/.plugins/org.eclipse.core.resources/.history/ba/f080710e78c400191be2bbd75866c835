@@ -1,0 +1,48 @@
+/*
+ ============================================================================
+ Name        : prog1general.c
+ Author      : Julian Ioisi
+ Version     : 0.1
+ Copyright   : 
+ Description : Learning & testing project
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+//pide dos numeros, los guarda en 2 variables dist, las suma y lo muestra
+
+int sumaDatos(int* result);
+int requestInteger(int* address,char* message);
+
+int main(void) {
+	int result;
+	int sumar = sumaDatos(&result);
+	if(sumar){
+		printf("\nLa suma de los numeros es : %d",result);
+	}
+	return EXIT_SUCCESS;
+}
+
+int sumaDatos(int* result){
+	int numA,numB;
+	int response =-1;
+	response = requestInteger(&numA,"Ingrese el primer numero.\n");
+	if(response !=-1){
+		response = requestInteger(&numB,"Ingrese el segundo numero.\n");
+		if(response!=-1){
+			*result = numA+numB;
+			return 1;
+		}
+	}
+	return -1;
+}
+
+
+int requestInteger(int* address,char* message){
+	int number;
+	printf(message);
+	scanf("%d",&number);
+	*address = number;
+	return 1;
+}

@@ -1,0 +1,24 @@
+/*
+ ============================================================================
+ Name        : prog1general.c
+ Author      : Julian Ioisi
+ Version     : 0.1
+ Copyright   : 
+ Description : Learning & testing project
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int impresion = 0;
+	puts("Hello World!");
+	scanf("%d",&impresion);
+	printf("%d\n",impresion);
+	int pause;
+	while(pause !='z'){
+		pause = getchar();
+	}
+	return EXIT_SUCCESS;
+}

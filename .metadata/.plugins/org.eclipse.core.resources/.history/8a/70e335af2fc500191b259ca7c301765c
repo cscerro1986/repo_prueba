@@ -1,0 +1,34 @@
+/*
+ ============================================================================
+ Name        : Proyecto2.c
+ Author      : 
+ Version     :
+ Copyright   : 
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int dimeNumero(int *num);
+
+int main() {
+	int numero;
+
+	dimeNumero(&numero);
+	printf("%d",numero);
+
+	return 0;
+}
+
+
+int dimeNumero(int *num){
+	int numero1;
+	//printf("Ingrese el numero1: ");
+	//scanf("%d",&num);
+	*num = scanf("%d",&numero1);
+
+
+	return 0;
+}

@@ -1,0 +1,6 @@
+20:53:17 **** Incremental Build of configuration Debug for project Proyecto2 ****
+make all 
+make: No se hace nada para 'all'.
+
+20:53:17 Build Finished. 0 errors, 0 warnings. (took 280ms)
+

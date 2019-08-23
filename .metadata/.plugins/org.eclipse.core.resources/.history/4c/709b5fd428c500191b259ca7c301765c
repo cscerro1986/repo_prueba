@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : Prueba.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+int dimeNumero(int &resul);
+
+int main() {
+	int num1,num2,resultado;
+
+	dimeNumero(&resultado);
+	printf("El numero elegido es: %d",*resulado);
+	return 0;
+}
+
+
+int dimeNumero(int &resul){
+
+	printf("dime un numero");
+	scanf("%d",&resul);
+
+
+}
+
