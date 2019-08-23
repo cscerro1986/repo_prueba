@@ -31,7 +31,7 @@ int dimeNumero(int *num){
 
 
 	int numero1;
-	printf("Dime un numero:");
+	printf("Dime un numero");
 	scanf("%d",&numero1);
 	*num = numero1;
 
